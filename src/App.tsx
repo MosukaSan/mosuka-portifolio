@@ -7,6 +7,7 @@ import type { JSX } from "react";
 import Experience from "./views/Experience";
 import Contact from "./views/Contact";
 import { useFadeTransition } from "./hooks/useFadeTransition";
+import About from "./views/About";
 
 function App(): JSX.Element {
 	return (
@@ -28,6 +29,7 @@ function PagesWithFade(): JSX.Element {
 			
 			<Routes>
 				<Route path="/" element={<Home transition={transition} toggleTransition={toggleTransition} animDelay={animDelay} goTo={goTo}/>}/>
+				<Route path="/about" element={<About transition={transition} toggleTransition={toggleTransition} animDelay={animDelay}/>}/>
 				<Route path="/projects" element={<Projects transition={transition} toggleTransition={toggleTransition} animDelay={animDelay}/>}/>
 				<Route path="/experience" element={<Experience transition={transition} toggleTransition={toggleTransition} animDelay={animDelay}/>} />
 				<Route path="/contact" element={<Contact transition={transition} toggleTransition={toggleTransition} animDelay={animDelay}/>} />

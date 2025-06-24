@@ -12,10 +12,10 @@ function Experience({ transition, toggleTransition, animDelay }: FadeAnimation):
         
     return (
         <main>
-            <section className="h-full py-10 px-3 bg-background">
+            <div className="h-full py-10 px-3 bg-background">
                 <div className={`container mx-auto flex flex-col justify-between space-y-10 transition-opacity ${transition ? 'opacity-100' : 'opacity-0'}`}
                 style={{ transitionDuration: `${animDelay}ms` }}>
-                    <div className="text-text-light flex flex-col space-y-4">
+                    <section className="text-text-light flex flex-col space-y-4">
                         <h1 className="text-2xl text-orange-highlight font-bold">Adega e Gelo Subzero</h1>
                         <p className="text-justify leading-relaxed">
                             &emsp;&emsp;Fiz um site para a Adega Subzero usando <strong>React, JavaScript, NodeJS e Firebase</strong>. O site
@@ -24,14 +24,14 @@ function Experience({ transition, toggleTransition, animDelay }: FadeAnimation):
                             forma de exibir os produtos da loja no site e que os donos consigam adicionar novos
                             produtos. Logo, tive que fazer um <strong>sistema de login</strong> para que só eles possam adicionar
                             produtos, uma <strong>interface amigável</strong> para a adição dos produtos e um <strong>CRUD</strong> simples para
-                            <strong>criar, ler, editar e remover</strong> os produtos. Foi meu primeiro projeto para uma empresa, aprendi muito com ele e <strong>melhorei</strong>
+                            <strong> criar, ler, editar e remover</strong> os produtos. Foi meu primeiro projeto para uma empresa, aprendi muito com ele e <strong>melhorei</strong>
                             em muitos quesitos como <strong>estruturação de projetos, código limpo, boas práticas e novas
                             funcionalidades das tecnologias</strong> que utilizei.
                         </p>
                         <a href="https://adega-subzero-website.vercel.app/" className="hover:text-text-light-hover"><FontAwesomeIcon icon={faLink}/> <span className="underline">adega-subzero-website.vercel.app</span></a>
                         <img src={subzeroImagem} alt="Subzero Imagem" className="h-80 w-auto object-contain"/>
-                    </div>
-                    <div className="text-text-light flex flex-col space-y-4">
+                    </section>
+                    <section className="text-text-light flex flex-col space-y-4">
                         <h1 className="text-2xl text-orange-highlight font-bold">Escola Estadual Professora Bernadete Aparecida Pereira Godoi (em andamento)</h1>
                         <p className="text-justify leading-relaxed">
                             &emsp;&emsp;Este projeto está em sua fase inicial. Estou utilizando <strong>React, Typescript, Tailwind e Python com Flask e Pandas</strong>. 
@@ -45,9 +45,9 @@ function Experience({ transition, toggleTransition, animDelay }: FadeAnimation):
                             gráficos</strong>. O login dos pais ainda não está definido, mais pretendo armazenar os dados de login em um <strong>banco de dados relacional</strong> e 
                             <strong> alimentá-lo com algum arquivo excel</strong> com os dados dos responsáveis.
                         </p>
-                    </div>
+                    </section>
                 </div>
-            </section>
+            </div>
         </main>
     );
 }

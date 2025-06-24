@@ -14,7 +14,7 @@ function Projects({ transition, toggleTransition, animDelay }: FadeAnimation): J
 
     return (
         <main className="flex-1">
-            <section className="h-full flex items-center justify-center">
+            <section className="h-full flex items-center justify-center px-3">
                 <div className={`transition-opacity ${transition ?  'opacity-100' :  'opacity-0'}`}
                 style={{ transitionDuration: `${animDelay}ms` }}>
                     {

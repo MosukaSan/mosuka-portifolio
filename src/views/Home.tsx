@@ -8,8 +8,8 @@ function Home({ transition, toggleTransition, animDelay, goTo }: FadeAnimationFu
 
     return (
         <main className="flex-1">
-            <section className="h-full flex justify-between items-center px-10">
-                <div className={`text-text-light container mx-auto transition-opacity ${transition ?  'opacity-100' :  'opacity-0'}`}
+            <section className="h-full flex justify-center md:justify-between items-center px-10">
+                <div className={`text-text-light md:container mx-auto transition-opacity ${transition ?  'opacity-100' :  'opacity-0'}`}
                 style={{ transitionDuration: `${animDelay}ms` }}>
                     <h1 className="font-bold text-4xl">OLÁ<span className="text-orange-highlight">!</span></h1>
                     <h1 className="font-bold text-4xl">Me chamo <span className="text-orange-highlight">Lucas Lima</span></h1>
