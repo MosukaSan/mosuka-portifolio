@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --color-background: #121f28;
+    --color-text-light: #d8dadc;
+    --color-orange-highlight: #fd725b;
+    --color-orange-hover: #fd5335;
+    --color-dark-contrast: #16232c;
+    --color-text-light-hover: #b8b8b8;
+}
