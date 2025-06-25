@@ -1,1 +1,2 @@
 export const FADE_ANIMATION_DELAY = 500;
+export const NAVBAR_ANIMATION_DELAY = 500;

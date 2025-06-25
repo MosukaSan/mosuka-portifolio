@@ -13,7 +13,7 @@ function Contact({ transition, toggleTransition, animDelay }: FadeAnimation): JS
     return (
         <main className="flex-1">
             <section className="h-full">
-                <div className={`h-full container flex mx-auto space-x-10 justify-center md:justify-start items-center transition-opacity ${transition ?  'opacity-100' :  'opacity-0'}`}
+                <div className={`h-full container flex flex-col md:flex-row mx-auto space-y-10 md:space-x-10 justify-center md:justify-start items-center transition-opacity ${transition ?  'opacity-100' :  'opacity-0'}`}
                 style={{ transitionDuration: `${animDelay}ms` }}>
                     <div className="flex flex-col space-y-7 text-text-light text-5xl font-bold">
                         <div className="flex space-x-4 hover:cursor-pointer">

@@ -11,8 +11,8 @@ function useFadeTransition(): [boolean, (p: boolean) => void, number, (p: string
         if (pageToNavigate != route) {
             toggleTransition(false);
             setTimeout(() => { 
-                navigate(pageToNavigate); 
                 setRoute(pageToNavigate);
+                navigate(pageToNavigate); 
             }, FADE_ANIMATION_DELAY);
         }
     }

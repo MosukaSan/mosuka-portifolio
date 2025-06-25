@@ -3,11 +3,12 @@ import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Home from "./views/Home"
 import Projects from "./views/Projects";
-import type { JSX } from "react";
+import { useState, type JSX } from "react";
 import Experience from "./views/Experience";
 import Contact from "./views/Contact";
 import { useFadeTransition } from "./hooks/useFadeTransition";
 import About from "./views/About";
+import NavBar from "./components/NavBar";
 
 function App(): JSX.Element {
 	return (
@@ -22,10 +23,12 @@ function App(): JSX.Element {
 
 function PagesWithFade(): JSX.Element {
 	const [transition, toggleTransition, animDelay, goTo] = useFadeTransition();
+	const [navActive, toggleNav] = useState(false);
 
 	return (
 		<>
-			<Header goTo={goTo}/>
+			<NavBar goTo={goTo} navActive={navActive} toggleNav={toggleNav}/>
+			<Header goTo={goTo} toggleNav={toggleNav}/>
 			
 			<Routes>
 				<Route path="/" element={<Home transition={transition} toggleTransition={toggleTransition} animDelay={animDelay} goTo={goTo}/>}/>
