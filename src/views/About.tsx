@@ -15,7 +15,7 @@ function About({ transition, toggleTransition, animDelay }: FadeAnimation): JSX.
                     <h2 className="font-bold text-2xl">Sobre mim</h2>
                     <p className="text-justify">
                         Me chamo Lucas Lima e tenho 17 anos! Sou um entusiasta da tecnologia, me apaixono por essa área desde criança e
-                        estudo muito para me destacar. Programo tanto por hobbie quanto profissionalmente, tenho alguns projetos bem
+                        estou na área há mais ou menos <strong>1 ano e meio</strong>. Programo tanto por hobbie quanto profissionalmente, tenho alguns projetos bem
                         interessantes e também já fiz algumas soluções para pequenas empresas.
                     </p>
                 </section>
