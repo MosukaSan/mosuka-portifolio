@@ -23,9 +23,6 @@ function Contact({ transition, toggleTransition, animDelay }: FadeAnimation): JS
                             <a href="https://www.instagram.com/lucasligos/" className="hover:text-text-light-hover"><FontAwesomeIcon icon={faInstagramSquare} className="text-[#d200c4]"/> Instagram</a>
                         </div>
                     </div>
-                    <div>
-                        <img src={lnImgLink} alt="instagram-photo" className="h-30 rounded-full"/>
-                    </div>
                 </div> 
             </section>
         </main>
