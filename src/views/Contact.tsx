@@ -4,8 +4,7 @@ import type { FadeAnimation } from "../interfaces/interfaces";
 import { useEffect, type JSX } from "react";
 
 function Contact({ transition, toggleTransition, animDelay }: FadeAnimation): JSX.Element {
-    const lnImgLink = 'https://media.licdn.com/dms/image/v2/D4E03AQFxR4cZnCJCiA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1712314176201?e=1755734400&v=beta&t=BDTdPXdzJm_RTL4TrzuXM8A7NLSEf_VjAhzIebrW3Nk';
-
+    
     useEffect(() => {
         toggleTransition(true);
     }, []);
@@ -22,9 +21,6 @@ function Contact({ transition, toggleTransition, animDelay }: FadeAnimation): JS
                         <div className="flex space-x-4 hover:cursor-pointer">
                             <a href="https://www.instagram.com/lucasligos/" className="hover:text-text-light-hover"><FontAwesomeIcon icon={faInstagramSquare} className="text-[#d200c4]"/> Instagram</a>
                         </div>
-                    </div>
-                    <div>
-                        <img src={lnImgLink} alt="instagram-photo" className="h-30 rounded-full"/>
                     </div>
                 </div> 
             </section>
